@@ -138,3 +138,123 @@ html,
 body {
   height: 100%;
 }
+
+@text-small: 1rem;
+@text-medium: 1.5rem;
+@text-larger: 1.8rem;
+@text-huge: 2.5rem;
+@font-style: italic;
+
+//Mixins
+.flex-box {
+  display: flex;
+}
+
+.max-width {
+  max-width: 100%;
+}
+
+h2 {
+  font-size: @text-larger;
+}
+
+h3 {
+  font-size: @text-small;
+  font-style: @font-style;
+}
+
+p {
+  font-size: @text-small;
+}
+
+section {
+  padding-left: 5px;
+}
+
+header {
+  nav {
+    .max-width();
+    padding-left: 200px;
+    width: 100%;
+    .flex-box();
+    a {
+      padding-left: 20px;
+    }
+  }
+}
+
+.intro {
+  h2 {
+    padding-top: 10px;
+  }
+  p {
+    padding-top: 10px;
+    padding-right: 5px;
+    .max-width();
+    width: 100%;
+  }
+}
+
+.education {
+  .flex-box();
+  .max-width();
+  width: 100%;
+  padding-top: 30px;
+  .education.content {
+    ul {
+      padding-top: 10px;
+    }
+  }
+  .education-img {
+    img {
+      padding-left: 20px;
+      width: 90%;
+      // height: 70%;
+    }
+  }
+}
+
+.work-experience {
+  .max-width();
+  width: 100%;
+  // padding-top: 20px;
+  h3 {
+    padding-top: 10px;
+  }
+}
+
+.publications-skills {
+  .max-width();
+  width: 100%;
+  h2 {
+    padding-top: 30px;
+  }
+  .pub-content {
+    .flex-box();
+    .skills {
+      ul {
+        padding-top: 10px;
+      }
+    }
+    .publications {
+      ul {
+        padding-top: 10px;
+      }
+    }
+    h3 {
+      padding-top: 10px;
+    }
+  }
+}
+
+.contact {
+  .max-width();
+  width: 100%;
+  h2 {
+    padding-top: 30px;
+  }
+  p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

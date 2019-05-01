@@ -134,3 +134,90 @@ html,
 body {
   height: 100%;
 }
+.flex-box {
+  display: flex;
+}
+.max-width {
+  max-width: 100%;
+}
+h2 {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1rem;
+  font-style: italic;
+}
+p {
+  font-size: 1rem;
+}
+section {
+  padding-left: 5px;
+}
+header nav {
+  max-width: 100%;
+  padding-left: 200px;
+  width: 100%;
+  display: flex;
+}
+header nav a {
+  padding-left: 20px;
+}
+.intro h2 {
+  padding-top: 10px;
+}
+.intro p {
+  padding-top: 10px;
+  padding-right: 5px;
+  max-width: 100%;
+  width: 100%;
+}
+.education {
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+  padding-top: 30px;
+}
+.education .education.content ul {
+  padding-top: 10px;
+}
+.education .education-img img {
+  padding-left: 20px;
+  width: 90%;
+}
+.work-experience {
+  max-width: 100%;
+  width: 100%;
+}
+.work-experience h3 {
+  padding-top: 10px;
+}
+.publications-skills {
+  max-width: 100%;
+  width: 100%;
+}
+.publications-skills h2 {
+  padding-top: 30px;
+}
+.publications-skills .pub-content {
+  display: flex;
+}
+.publications-skills .pub-content .skills ul {
+  padding-top: 10px;
+}
+.publications-skills .pub-content .publications ul {
+  padding-top: 10px;
+}
+.publications-skills .pub-content h3 {
+  padding-top: 10px;
+}
+.contact {
+  max-width: 100%;
+  width: 100%;
+}
+.contact h2 {
+  padding-top: 30px;
+}
+.contact p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
