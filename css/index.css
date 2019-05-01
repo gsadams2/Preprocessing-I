@@ -159,8 +159,15 @@ header nav {
   width: 100%;
   display: flex;
 }
+@media (max-width: 500px) {
+  header nav {
+    padding-left: 25px;
+  }
+}
 header nav a {
   padding-left: 20px;
+  color: dark gray;
+  text-decoration: none;
 }
 .intro h2 {
   padding-top: 10px;
@@ -177,8 +184,12 @@ header nav a {
   width: 100%;
   padding-top: 30px;
 }
-.education .education.content ul {
-  padding-top: 10px;
+.education .education-content h2 {
+  padding-bottom: 10px;
+}
+.education .education-content ul {
+  margin-left: 20px;
+  list-style: square;
 }
 .education .education-img img {
   padding-left: 20px;
@@ -191,6 +202,15 @@ header nav a {
 .work-experience h3 {
   padding-top: 10px;
 }
+.work-experience .ocean-tomo ul {
+  margin-left: 20px;
+  list-style: square;
+}
+@media (max-width: 500px) {
+  .work-experience {
+    padding-top: 30px;
+  }
+}
 .publications-skills {
   max-width: 100%;
   width: 100%;
@@ -201,11 +221,19 @@ header nav a {
 .publications-skills .pub-content {
   display: flex;
 }
+.publications-skills .pub-content .skills h3 {
+  padding-bottom: 10px;
+}
 .publications-skills .pub-content .skills ul {
-  padding-top: 10px;
+  margin-left: 20px;
+  list-style: square;
+}
+.publications-skills .pub-content .publications h3 {
+  padding-bottom: 10px;
 }
 .publications-skills .pub-content .publications ul {
-  padding-top: 10px;
+  margin-left: 20px;
+  list-style: square;
 }
 .publications-skills .pub-content h3 {
   padding-top: 10px;
